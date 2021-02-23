@@ -24,12 +24,41 @@ let estado1 = {
    populacao: 2278308
 }
 
+
+console.log(estado1)
 estadosNe.push(estado1)
 
 /*
    1) Crie objetos para os demais Estados, segundo o modelo acima, e acrescente-os
       ao vetor estadosNe usando push().
 */
+let estado2 = {
+    nome: 'Alagoas',
+    sigla: 'AL',
+    area: 27848,
+    populacao: 3322820
+}
+console.log(estado2)
+estadosNe.push(estado2)
+
+let estado3 = {
+    nome: 'Rio Grande do Norte',
+    sigla: 'RN',
+    area: 52811.05,
+    populacao: 3479010
+}
+console.log(estado3)
+estadosNe.push(estado3)
+
+let estado4 = {
+    nome: 'Paraíba',
+    sigla: 'PB',
+    area: 56469.78,
+    populacao: 3996496
+}
+console.log(estado4)
+estadosNe.push(estado4)
+
 
 /*
    2) Escreva uma arrow function que receba dois parâmetros, área e população, e
