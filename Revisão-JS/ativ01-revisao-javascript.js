@@ -66,6 +66,8 @@ estadosNe.push(estado4)
       segunda pela primeira. 
 */
 
+let densidade = (a, b) => a/b
+
 /*
    3) Percorra o vetor estadosNe usando um for tradicional. Para cada estado,
       chame a arrow function criada em 2) e efetue o cálculo correspondente.
@@ -76,10 +78,20 @@ estadosNe.push(estado4)
 
 */
 
+for (let i = 0; i < estadosNe.length; i++) {
+    let densidadedemografica
+    densidade(i.area, i.populacao)
+    return densidadedemografica
+    i ['Densidade Demográfica'] = densidadedemografica
+    delete i.sigla
+}
+console.log(estadosNe)
+
 /* 4) Escreva uma arrow function que receba um objeto. Na função, use for..in
       para extrair as propriedades e seus valores e exibi-los com console.log().
 
 */
+
 
 /* 5) Percorra o vetor estadosNe usando for..of. Para cada objeto no vetor,
       invoque a função escrita em 4) para exibi-lo.
