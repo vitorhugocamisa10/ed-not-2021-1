@@ -25,7 +25,7 @@ let estado1 = {
 }
 
 
-console.log(estado1)
+console.table(estado1)
 estadosNe.push(estado1)
 
 /*
@@ -38,7 +38,7 @@ let estado2 = {
     area: 27848,
     populacao: 3322820
 }
-console.log(estado2)
+console.table(estado2)
 estadosNe.push(estado2)
 
 let estado3 = {
@@ -47,7 +47,7 @@ let estado3 = {
     area: 52811.05,
     populacao: 3479010
 }
-console.log(estado3)
+console.table(estado3)
 estadosNe.push(estado3)
 
 let estado4 = {
@@ -56,7 +56,7 @@ let estado4 = {
     area: 56469.78,
     populacao: 3996496
 }
-console.log(estado4)
+console.table(estado4)
 estadosNe.push(estado4)
 
 
@@ -92,12 +92,25 @@ console.log(estadosNe)
 
 */
 
+let propriedades = (objeto) => {
+    for (const key in objeto) {
+       console.log(key + " -> " + objeto[key])
+    }
+}
+
+
 
 /* 5) Percorra o vetor estadosNe usando for..of. Para cada objeto no vetor,
       invoque a função escrita em 4) para exibi-lo.
 
-/*
-   6)
+*/
+
+   for (let objeto of estadosNe) {
+    propriedades(objeto)
+}
+
+/*  
+     6)
       a) Declare um vetor vazio.
       b) Insira no vetor criado no item a) apenas o nome de cada Estado, conforme
          os dados no topo deste arquivo, um de cada vez. Faça as inserções de 
@@ -106,5 +119,12 @@ console.log(estadosNe)
          deve ser inserido com unshift(), para manter a ordem alfabética. 
          O terceiro Estado (Rio Grande do Norte) deve ser inserido entre os dois 
          já existentes, e assim por diante.
-
 */
+
+let nome_estados = []
+
+
+nome_estados.unshift(estadosNe[1].nome)
+nome_estados.splice(2,0,estadosNe[8].nome, estadosNe[5].nome, estadosNe[7].nome, estadosNe[3].nome,estadosNe[4].nome,estadosNe[6].nome, estadosNe[2].nome)
+nome_estados.push(estadosNe[0].nome)
+console.table(nome_estados)
