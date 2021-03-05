@@ -116,19 +116,19 @@ import { nomes } from './includes/vetor-nomes.mjs'
 console.log('----------------------------------------')
 
 console.time('Buscando ORKUTILSON')
-console.log(buscaSequencial(nomes, 'ORKUTILSON') >= 0)
+console.log(buscaSequencial(nomes, 'ORKUTILSON'))
 console.timeEnd('Buscando ORKUTILSON') 
 
 console.time('Buscando ZULEICA')
-console.log(buscaSequencial(nomes, 'ZULEICA') >= 0)
+console.log(buscaSequencial(nomes, 'ZULEICA'))
 console.timeEnd('Buscando ZULEICA')
 
 console.time('Buscando AARAO')
-console.log(buscaSequencial(nomes, 'AARAO') >= 0)
+console.log(buscaSequencial(nomes, 'AARAO'))
 console.timeEnd('Buscando AARAO')
 
 console.time('Buscando JUREMA')
-console.log(buscaSequencial(nomes, 'JUREMA') >= 0)
+console.log(buscaSequencial(nomes, 'JUREMA'))
 console.timeEnd('Buscando JUREMA')
 
 
